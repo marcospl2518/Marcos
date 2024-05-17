@@ -1,14 +1,13 @@
+
 #include <stdio.h>
 
 int main() {
-    int numeroMes;
+    int mes;
 
-    // Solicita ao usuário que digite um número de 1 a 12
-    printf("Digite um número de 1 a 12 para representar um mês: ");
-    scanf("%d", &numeroMes);
+    printf("Digite um número inteiro entre 1 e 12: ");
+    scanf("%d", &mes);
 
-    // Verifica se o número está dentro do intervalo válido
-    switch (numeroMes) {
+    switch(mes) {
         case 1:
             printf("Janeiro\n");
             break;
@@ -52,5 +51,3 @@ int main() {
 
     return 0;
 }
-
-

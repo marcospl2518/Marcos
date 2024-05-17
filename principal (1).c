@@ -1,24 +1,43 @@
 #include <stdio.h>
 
-int main() {
-    int num1, num2, num3;
-
-    printf("Digite o primeiro valor: ");
-    scanf("%d", &num1);
-
-    printf("Digite o segundo valor: ");
-    scanf("%d", &num2);
-
-    printf("Digite o terceiro valor: ");
-    scanf("%d", &num3);
-
-    if (num1 <= num2 && num1 <= num3) {
-        printf("O menor valor é: %d\n", num1);
-    } else if (num2 <= num1 && num2 <= num3) {
-        printf("O menor valor é: %d\n", num2);
-    } else {
-        printf("O menor valor é: %d\n", num3);
-    }
-
-    return 0;
+ int
+main ()
+{
+  
+int numero;
+  
+ 
+printf ("Digite um nC:mero inteiro positivo: ");
+  
+scanf ("%d", &numero);
+  
+ 
+if (numero < 0)
+	{
+	  
+printf ("O nC:mero digitado nC#o C) positivo.\n");
+	
 }
+  else
+	{
+	  
+if (numero % 2 == 0)
+		{
+		  
+printf ("O nC:mero digitado C) par.\n");
+		
+}
+	  else
+		{
+		  
+printf ("O nC:mero digitado C) C-mpar.\n");
+		
+}
+	
+}
+  
+ 
+return 0;
+
+}
+

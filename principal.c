@@ -1,26 +1,24 @@
 #include <stdio.h>
 
 int main() {
-    float lado1, lado2, lado3;
-
-    // Pedindo os lados do triângulo
-    printf("Digite o primeiro lado do triângulo: ");
-    scanf("%f", &lado1);
-
-    printf("Digite o segundo lado do triângulo: ");
-    scanf("%f", &lado2);
-
-    printf("Digite o terceiro lado do triângulo: ");
-    scanf("%f", &lado3);
-
-    // Verificando o tipo de triângulo
-    if (lado1 == lado2 && lado2 == lado3) {
-        printf("O triângulo é equilátero.\n");
-    } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
-        printf("O triângulo é isósceles.\n");
+    int nota;
+    
+    // Receber a nota do usuário
+    printf("Digite a nota (0-100): ");
+    scanf("%d", &nota);
+    
+    // Determinar o conceito correspondente à nota
+    if (nota >= 90 && nota <= 100) {
+        printf("A\n");
+    } else if (nota >= 80 && nota < 90) {
+        printf("B\n");
+    } else if (nota >= 70 && nota < 80) {
+        printf("C\n");
+    } else if (nota >= 60 && nota < 70) {
+        printf("D\n");
     } else {
-        printf("O triângulo é escaleno.\n");
+        printf("E\n");
     }
-
+    
     return 0;
 }
